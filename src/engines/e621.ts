@@ -13,7 +13,7 @@ export default class e621 extends ScrapeEngineBase {
     post.pageUrl = document.location.href;
 
     // Set image url
-    const downloadEl = document.querySelector(".ptbr-fullscreen > a") as HTMLAnchorElement;
+    const downloadEl = document.querySelector(".ptbr-fullscreen-button > a") as HTMLAnchorElement;
     post.contentUrl = downloadEl?.href;
 
     // Set content type
